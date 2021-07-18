@@ -20,8 +20,10 @@ public class Deer extends Animal implements Vegetarian{
     
     public static void main(String[] args) {
         Deer d = new Deer();
+        Vegetarian v = d;
         Animal a = d;
         a.walk(); 
+        d.walk(); // using Vegetarian as a reference type 
         //now a refers to a dog b
         a = new Dog();
         a.walk();
