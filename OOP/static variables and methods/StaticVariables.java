@@ -1,4 +1,3 @@
-import java.io.*;
 public class StaticVariables {
 
    // salary  variable is a private static variable
@@ -9,7 +8,7 @@ public class StaticVariables {
 
    public static void main(String args[]) {
       salary = 1000;
-      System.out.println(DEPARTMENT + "average salary:" + salary);
+      System.out.println(StaticVariables.DEPARTMENT + "average salary:" + StaticVariables.salary);
 
       foo();
       foo();
